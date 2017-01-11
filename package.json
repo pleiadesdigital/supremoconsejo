@@ -1,0 +1,15 @@
+{
+  "name": "pleiades-reverse",
+  "version": "1.0.0",
+  "description": "Reverse Engineering to pleaides17",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pleiadesdigital/pleiades_reverse.git"
+  },
+  "author": "Ronaldo Ortiz",
+  "license": "ISC",
+  "devDependencies": {
+   
+  }
+}

@@ -1,0 +1,44 @@
+
+.page-header {
+	padding-bottom: 2em;
+}
+
+.page {
+	.site-content {
+		.content-area {
+			.entry-header {
+				.edit-link {
+					font-size: 11px;
+					font-size: 0.6875rem;
+					font-weight: $bold;
+					a {
+						color: inherit;
+					}
+				} //.edit-link
+			} //.entry-header
+		} //.content-area
+	} //.site-content
+	
+} //.page
+
+.search .page .entry-header .edit-link {
+	font-size: 11px;
+	font-size: 0.6875rem;
+}
+.page-links {
+	clear: both;
+	margin: 0px 0px 1.5em;
+}
+.page:not(.home) #content {
+	padding-bottom: 1.5em;
+}
+
+//404 PAGE
+
+.error404 .page-content {
+	padding-bottom: 4em;
+}
+.error404 .page-content .search-form,
+.search .page-content .search-form {
+	margin-bottom: 3em;
+}

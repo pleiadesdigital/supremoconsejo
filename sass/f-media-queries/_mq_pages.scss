@@ -1,0 +1,17 @@
+
+
+
+@include breakpoint($laptop) {
+	.page.page-one-column .entry-header,
+	.pleiades17-front-page.page-one-column .entry-header,
+	.archive.page-one-column:not(.has-sidebar) .page-header {
+		margin-bottom: 4em;
+	}
+	.page:not(.home) #content {
+		padding-bottom: 3.25em;
+	}
+	// 404 page
+	.error404 .page-content {
+		padding-bottom: 9em;
+	}
+} //breakpoint($laptop)

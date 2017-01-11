@@ -1,0 +1,24 @@
+html {
+	@include border-box-sizing;
+	body {
+		background: #fff;
+		#page {
+			position: relative;
+			word-wrap: break-word;
+		} //#page
+	} //body
+} //html
+
+
+.wrap {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 700px;
+	padding-left: 2em;
+	padding-right: 2em;
+	&:after {
+		clear: both;
+		content: "";
+		display: block;
+	} //&:after
+} //.wrap

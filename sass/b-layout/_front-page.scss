@@ -1,0 +1,79 @@
+.pleiades17-front-page {
+	.site-content {
+		padding: 0;
+		.content-area {
+			.site-main {
+				.fp-main-content {
+					position: relative;
+					.wrap {
+						@include container();
+						background-color: $white;
+						padding-bottom: 0.5em;
+						padding-top: 1.75em;
+					} //.wrap
+				} //.panel-content
+			} //.site-main
+		} //.content-area
+	} //.site-content
+} //.pleiades17-front-page
+
+//META - EDIT LINK
+.pleiades17-front-page {
+	.pleiades17-panel {
+		overflow: hidden;
+		position: relative;
+		.panel-image {
+			background-position: center center;
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+			position: relative;
+		} //.panel-image
+		.entry-header {
+			.edit-link {
+				display: block;
+				margin: 0.3em 0px 0px;
+				font-size: 22px;
+				font-size: 1.375rem;
+			} //.edit-link
+		} //.entry-header
+	} //.pleiades17-panel
+}
+
+.pleiades17-front-page article:not(.has-post-thumbnail):not(:first-child) {
+	border-top: 1px solid #ddd;
+}
+
+// FRONT PAGE - RECENT POSTS
+
+.pleiades17-front-page {
+	.panel-content {
+		.wrap {
+			.recent-posts {
+				article {
+					border: 0;
+					color: #333;
+					margin-bottom: 3em;
+					.entry-header {
+						margin-bottom: 1.2em;
+					} //.entry-header
+				} //article
+			} //.recent-posts
+		} //.wrap		
+	} //.panel-content
+} //.pleiades17-front-page
+
+.page .panel-content .recent-posts .entry-title {
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: 300;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.pleiades17-panel .recent-posts .entry-header .edit-link {
+	display: inline-block;
+	font-size: 11px;
+	font-size: 0.6875rem;
+	margin-left: 1em;
+}

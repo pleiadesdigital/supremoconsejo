@@ -1,0 +1,59 @@
+
+@include breakpoint($tablet) {
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		color: $black;
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+	h1 {
+		font-size: 30px;
+		font-size: 1.875rem;
+	}
+	h2,
+	.page .panel-content .recent-posts .entry-title {
+		font-size: 26px;
+		font-size: 1.625rem;
+	}
+	h3 {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+	h4 {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+	h5 {
+		font-size: 13px;
+		font-size: 0.8125rem;
+	}
+	h6 {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	.entry-content blockquote.alignleft,
+	.entry-content blockquote.alignright {
+		font-size: 14px;
+		font-size: 0.875rem;
+	}
+} //breakpoint($tablet)
+
+@include breakpoint($laptop) {
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		font-size: 16px;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+	.entry-content blockquote.alignleft,
+	.entry-content blockquote.alignright {
+		font-size: 13px;
+		font-size: 0.8125rem;
+	}
+}

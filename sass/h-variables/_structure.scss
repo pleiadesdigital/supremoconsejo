@@ -1,0 +1,14 @@
+// GRID (SUSY)
+$susy: (
+	columns: 12,
+	container: 1000px,
+	gutters: 1/2,
+	gutter-position: inside
+);
+
+// BREAKPOINT MEDIA QUERIES
+$iphone: max-width 479px;
+$tablet: 480px;
+$laptop: 768px;
+$desktop: 1072px;
+$largedesk: 1264px;

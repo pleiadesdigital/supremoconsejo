@@ -1,0 +1,149 @@
+
+@include breakpoint($tablet) {
+	.panel-content .wrap {
+		padding-bottom: 2em;
+		padding-top: 3.5em;
+	}
+	.pleiades17-front-page {
+		.site-content {
+			.content-area {
+				.site-main {
+					.panel-content {
+						.wrap {
+							// max-width: 1000px;
+							.entry-header {
+								margin-bottom: 4.5em;
+							} //.entry-header
+							.recent-posts .entry-header {
+								margin-bottom: 4.5em;
+							} //.recent-posts .entry-header
+						} //.wrap
+					} //.panel-content
+				} //.site-main
+			} //.content-area
+		} //.site-content
+	} //.pleiades17-front-page
+
+	.panel-content .entry-header {
+		margin-bottom: 4.5em;
+	}
+	.panel-content .recent-posts .entry-header {
+		margin-bottom: 0;
+	}
+
+} //breakpoint($tablet)
+
+@include breakpoint($laptop) {
+	.pleiades17-front-page.has-header-image .site-branding,
+	.pleiades17-front-page.has-header-video .site-branding,
+	.home.blog.has-header-image .site-branding,
+	.home.blog.has-header-video .site-branding {
+		margin-bottom: 70px;
+	}
+	.pleiades17-front-page.has-header-image .custom-header-media,
+	.pleiades17-front-page.has-header-video .custom-header-media,
+	.home.blog.has-header-image .custom-header-media,
+	.home.blog.has-header-video .custom-header-media {
+		height: 1200px;
+		height: 100vh;
+		max-height: 100%;
+		overflow: hidden;
+	}
+	.pleiades17-front-page.has-header-image .custom-header-media:before,
+	.pleiades17-front-page.has-header-video .custom-header-media:before,
+	.home.blog.has-header-image .custom-header-media:before,
+	.home.blog.has-header-video .custom-header-media:before {
+		height: 33%;
+	}
+	.admin-bar.pleiades17-front-page.has-header-image .custom-header-media,
+	.admin-bar.pleiades17-front-page.has-header-video .custom-header-media,
+	.admin-bar.home.blog.has-header-image .custom-header-media,
+	.admin-bar.home.blog.has-header-video .custom-header-media {
+		height: calc(100vh - 32px);
+	}
+	.fp-main-content {
+		border: 2px dashed tomato;
+		@include container();
+		.wrap {
+			border: 2px dashed purple;
+			padding-bottom: 4.5em;
+			padding-top: 6em;
+			background: transparent;
+			width: 50%;
+			float: left;
+		} //.wrap
+	} //.panel-content
+	.panel-image {
+		// height: 100vh;
+		height: 400px;
+		max-height: 1200px;
+	}
+	/* With panel images 100% of the screen height, we're going to fix the background image where supported to create a parallax-like effect. */
+	.background-fixed .panel-image {
+		background-attachment: fixed;
+	}
+	.page-two-column .panel-content .entry-header {
+		float: left;
+		width: 36%;
+	}
+	.page-two-column .panel-content .entry-content {
+		float: right;
+		width: 58%;
+	}
+	//FRONT PAGE - RECENT POSTS
+	.page-two-column .panel-content .recent-posts {
+		clear: right;
+		float: right;
+		width: 58%;
+	}
+	.panel-content .recent-posts article {
+		margin-bottom: 4em;
+	}
+	.panel-content .recent-posts .entry-header,
+	.page-two-column #primary .panel-content .recent-posts .entry-header,
+	.panel-content .recent-posts .entry-content,
+	.page-two-column #primary .panel-content .recent-posts .entry-content {
+		float: none;
+		width: 100%;
+	}
+	.panel-content .recent-posts .entry-header {
+		margin-bottom: 1.5em;
+	}
+	.page .panel-content .recent-posts .entry-title {
+		font-size: 26px;
+		font-size: 1.625rem;
+	}
+	// Scroll Down Arrow
+	.site-header .menu-scroll-down {
+		display: block;
+		padding: 1em;
+		position: absolute;
+		right: 0;
+	}
+	.site-header .menu-scroll-down .icon {
+		-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+		-ms-transform: rotate(90deg); /* IE 9 */
+		transform: rotate(90deg);
+	}
+	.site-header .menu-scroll-down {
+		color: #fff;
+		top: 2em;
+	}
+	.site-header .navigation-top .menu-scroll-down {
+		color: #767676;
+		top: 0.7em;
+	}
+	.menu-scroll-down:focus {
+		outline: thin dotted;
+	}
+	.menu-scroll-down .icon {
+		height: 18px;
+		width: 18px;
+	}
+} //breakpoint($laptop)
+
+@include breakpoint($desktop) {
+	.panel-image {
+		height: 500px;
+	}
+} //breakpoint($desktop)

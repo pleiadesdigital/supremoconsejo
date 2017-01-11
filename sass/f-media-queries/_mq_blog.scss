@@ -1,0 +1,179 @@
+
+@include breakpoint($tablet) {
+	.taxonomy-description {
+		font-size: 14px;
+		font-size: 0.875rem;
+	}
+	.page-numbers.current {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	// SITE FOOTER
+	.site-footer {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+} //breakpoint($tablet)
+
+@include breakpoint($laptop) {
+	// Posts
+	.site-content {
+		padding: 0px;
+	}
+	.single-post .entry-title,
+	.page .entry-title {
+		font-size: 26px;
+		font-size: 1.625rem;
+	}
+	.comments-pagination,
+	.post-navigation {
+		clear: both;
+	}
+	.post-navigation .nav-previous {
+		float: left;
+		width: 50%;
+	}
+	.post-navigation .nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+	.nav-next,
+	.post-navigation .nav-next {
+		margin-top: 0;
+	}
+	// Entry Content
+		// without sidebar
+	:not(.has-sidebar) .entry-content blockquote.alignleft {
+		margin-left: -17.5%;
+		width: 48%;
+	}
+	:not(.has-sidebar) .entry-content blockquote.alignright {
+		margin-right: -17.5%;
+		width: 48%;
+	}
+		// with sidebar
+	.has-sidebar .entry-content blockquote.alignleft {
+		margin-left: 0;
+		width: 34%;
+	}
+	.has-sidebar .entry-content blockquote.alignright {
+		margin-right: 0;
+		width: 34%;
+	}
+	.has-sidebar #primary .entry-content blockquote.alignright.below-entry-meta {
+		margin-right: -72.5%;
+		width: 62%;
+	}
+	// Blog and archive
+	.blog:not(.has-sidebar) .entry-content blockquote.alignleft,
+	.pleiades17-front-page.page-two-column .entry-content blockquote.alignleft,
+	.archive:not(.has-sidebar) .entry-content blockquote.alignleft,
+	.page-two-column .entry-content blockquote.alignleft {
+		margin-left: -72.5%;
+		width: 62%;
+	}
+	.blog:not(.has-sidebar) .entry-content blockquote.alignright,
+	.pleiades17-front-page.page-two-column .entry-content blockquote.alignright,
+	.archive:not(.has-sidebar) .entry-content blockquote.alignright,
+	.page-two-column .entry-content blockquote.alignright {
+		margin-right: 0;
+		width: 36%;
+	}
+	// Blog, Archive, Search
+	.sticky .icon-thumb-tack {
+		height: 23px;
+		left: -2.5em;
+		top: 1.5em;
+		width: 32px;
+	}
+	body:not(.has-sidebar):not(.page-one-column) .page-header,
+	body.has-sidebar.error404 #primary .page-header,
+	body.page-two-column:not(.archive) #primary .entry-header,
+	body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
+		float: left;
+		width: 36%;
+	}
+	.blog:not(.has-sidebar) #primary article,
+	.archive:not(.page-one-column):not(.has-sidebar) #primary article,
+	.search:not(.has-sidebar) #primary article,
+	.error404:not(.has-sidebar) #primary .page-content,
+	.error404.has-sidebar #primary .page-content,
+	body.page-two-column:not(.archive) #primary .entry-content,
+	body.page-two-column #comments {
+		float: right;
+		width: 58%;
+	}
+	.blog .site-main > article,
+	.archive .site-main > article,
+	.search .site-main > article {
+		padding-bottom: 4em;
+	}
+	.navigation.pagination {
+		clear: both;
+		float: right;
+		width: 58%;
+	}
+	.has-sidebar .navigation.pagination,
+	.archive.page-one-column:not(.has-sidebar) .navigation.pagination {
+		float: none;
+		width: 100%;
+	}
+	.entry-footer {
+		display: table;
+		width: 100%;
+	}
+	.entry-footer .cat-tags-links {
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+	}
+	.entry-footer .edit-link {
+		display: table-cell;
+		text-align: right;
+		vertical-align: middle;
+	}
+	.entry-footer .edit-link a.post-edit-link {
+		margin-top: 0;
+		margin-left: 1em;
+	}
+} //breakpoint($laptop)
+
+@include breakpoint($desktop) {
+	// STICKY POSTS
+	.sticky .icon-thumb-tack {
+		font-size: 32px;
+		font-size: 2rem;
+		height: 22px;
+		left: -1.25em;
+		top: 0.75em;
+		width: 32px;
+	}
+	// PAGINATION
+	.page-numbers {
+		display: inline-block;
+	}
+	.page-numbers.current {
+		font-size: 15px;
+		font-size: 0.9375rem;
+	}
+	.page-numbers.current .screen-reader-text {
+		clip: rect(1px, 1px, 1px, 1px);
+		height: 1px;
+		overflow: hidden;
+		position: absolute !important;
+		width: 1px;
+	}
+} //breakpoint($desktop)
+
+@include breakpoint($largedesk) {
+	.has-sidebar .entry-content blockquote.alignleft {
+		margin-left: -20%;
+	}
+	.blog:not(.has-sidebar) .entry-content blockquote.alignright,
+	.archive:not(.has-sidebar) .entry-content blockquote.alignright,
+	.page-two-column .entry-content blockquote.alignright,
+	.pleiades17-front-page .entry-content blockquote.alignright {
+		margin-right: -20%;
+	}
+}

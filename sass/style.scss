@@ -1,0 +1,171 @@
+/*!
+Theme Name: Pleiades 2017
+Theme URI: http://underscores.me/
+Author: Ronaldo Ortiz
+Author URI: http://www.pleiadesdigital.com
+Description: Pleiades Digital Gulp Compass Responsive
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pleiades17
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+0. Compass Imports & External
+A. Normalize
+	a.1 Normalize
+	a.2 Accessibility
+	a.3 Alignments
+	a.4 Clearings
+B. Layout
+	b.0 Base
+	b.1 Header
+	b.2 Front Page
+	b.3 Regular Content
+	b.4 Pages
+	b.5 Posts
+	b.6 Footer
+C. Elements
+	c.1 Typography
+	c.2 Formatting
+	c.3 Forms
+	c.4 Links
+	c.5 Lists
+	c.6 Tables
+D. Navigation
+	d.1 Main Navigation
+E. Misc Markup
+	e.1 Comments
+	e.2 Media
+	e.3 Widgets
+F. Media Queries
+	f.1 All Media Queries
+G. Theme Fallbacks
+	g.1 Customizer
+	g.2 SVG Fallback
+	g.3 Print
+	g.4 Featured Image Hover
+H. Variables
+	h.1 Colors
+	h.2 Fonts
+	h.3 Structure
+	h.4 Mixins
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+0. Compass Imports & External
+--------------------------------------------------------------*/
+// COMPASS Imports
+
+@import "compass";
+// @import "compass/reset";
+@import "compass/css3/flexbox";
+@import "compass/css3/transition";
+@import "compass/css3/filter";
+@import "compass/css3/text-shadow";
+@import "compass/css3/box-shadow";
+@import "compass/css3/opacity";
+
+// EXTERNAL Libraries
+
+@import "susy";
+@import "breakpoint";
+
+
+// H. Variables
+@import "h-variables/colors";
+@import "h-variables/structure";
+@import "h-variables/fonts";
+@import "h-variables/mixins";
+
+/*--------------------------------------------------------------
+A. Normalize
+--------------------------------------------------------------*/
+@import "a-normalize/normalize";
+@import "a-normalize/accessibility";
+@import "a-normalize/alignments";
+@import "a-normalize/clearings";
+/*--------------------------------------------------------------
+B. Layout
+--------------------------------------------------------------*/
+@import "b-layout/base";
+@import "b-layout/header";
+@import "b-layout/front-page";
+@import "b-layout/regular-content";
+@import "b-layout/pages";
+@import "b-layout/posts";
+@import "b-layout/footer"; 
+/*--------------------------------------------------------------
+C. Elements
+--------------------------------------------------------------*/
+@import "c-elements/formatting";
+@import "c-elements/forms";
+@import "c-elements/links";
+@import "c-elements/lists";
+@import "c-elements/tables";
+@import "c-elements/typography";
+/*--------------------------------------------------------------
+D. Navigation
+--------------------------------------------------------------*/
+@import "d-navigation/main-navigation";
+/*--------------------------------------------------------------
+E. Misc Markup
+--------------------------------------------------------------*/
+@import "e-misc-markup/comments";
+@import "e-misc-markup/media";
+@import "e-misc-markup/widgets";
+/*--------------------------------------------------------------
+F. Media Queries
+--------------------------------------------------------------*/
+@import "f-media-queries/media-queries";
+/*--------------------------------------------------------------
+G. Theme Fallbacks
+--------------------------------------------------------------*/
+@import "g-theme-fallbacks/customizer";
+@import "g-theme-fallbacks/svg-fallbacks";
+@import "g-theme-fallbacks/print";
+@import "g-theme-fallbacks/featured-image-hover";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
