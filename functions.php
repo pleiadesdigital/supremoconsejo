@@ -197,19 +197,6 @@ function pleiades17_javascript_detection() {
 }
 add_action('wp_head', 'pleiades17_javascript_detection', 0);
 
-// DISPLAY CUSTOM CSS COLORS (disabled for now)
-/*function pleiades17_colors_css_wrap() {
-	if ('custom' !== get_theme_mod('colorscheme') && !is_customize_preview()) {
-		return;
-	}
-	require_once(get_parent_theme_file_path('/inc/color-patterns.php'));
-	$hue = absint(get_theme_mod('colorscheme_hue', 250));
-?>
-	<style type="text/css" id="custom-theme-colors" <?php if (is_customize_preview()) { echo 'data-hue="' . $hue . '"'; } ?>>
-		<?php echo pleiades17_custom_colors_css(); ?>
-	</style>
-<?php }
-add_action('wp_head', 'pleiades17_colors_css_wrap');*/
 
 /********************************************************
 ****************** STYLES & SCRIPTS *********************
@@ -224,7 +211,7 @@ function pleiades17_scripts() {
 	wp_enqueue_script('pleiades17-fontawesome', 'https://use.fontawesome.com/b1403a6995.js', array(), '20170109', true);
 
 	// Google Fonts
-	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400|Source+Sans+Pro:300,400,600');
+	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700');
 	// Google Maps
 	wp_enqueue_script('pleiades17-googlemaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDjEcnBmAHgm_LfegO9o84NLPAfBLwVjSY', array(), '20161130', true);
 
@@ -299,7 +286,7 @@ function pleiades17_header_image_tag($html, $header, $attr) {
 add_filter('get_header_image_tag', 'pleiades17_header_image_tag', 10, 3);
 
 // Add custom image sizes attribute to enhance responsive image functionality
-function pleiades17_post_thumbnail_sizes_attr( $attr, $attachment, $size ) {
+function pleiades17_post_thumbnail_sizes_attr($attr, $attachment, $size ) {
 	if (is_archive() || is_search() || is_home()) {
 		$attr['sizes'] = '(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px';
 	} else {

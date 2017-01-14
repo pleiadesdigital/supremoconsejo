@@ -14,10 +14,29 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php _e('Skip to content', 'pleiades17'); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				
-				<!-- HEADER IMAGE -->
-				<?php get_template_part('template-parts/header/header', 'image'); ?>
-				
+				<div class="top-header-wrapper">
+					<!-- HEADER IMAGE -->
+					<?php get_template_part('template-parts/header/header', 'image'); ?>
+					<!-- HEADER LOG IN FORM -->
+					<div class="login-form">
+						<form>
+							<ul>
+								<li>
+									<input type="text" name="username" placeholder="Usuario...">
+								</li>
+								<li>
+									<input type="password" name="password" placeholder="Contraseña...">
+								</li>
+								<li>
+									<input type="submit" name="submit" value="Ingresar">
+								</li>
+							</ul>				
+						</form>
+					</div>
+				</div><!-- class="top-header-wrapper" -->
+					
+			
+
 				<!-- NAVIGATION -->
 				<?php if (has_nav_menu('top')) : ?>
 					<div class="navigation-top">
@@ -26,7 +45,7 @@
 						</div><!-- .wrap -->
 					</div><!-- .navigation-top -->
 				<?php endif; ?>
-
+				
 			</header><!-- #masthead -->
 
 			<?php

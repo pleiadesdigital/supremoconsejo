@@ -1,28 +1,218 @@
 
+@include breakpoint($iphone) {
+	.site-header {
+		.top-header-wrapper {
+			// SITE BRANDING
+			.site-branding {
+				padding: 0px;
+				border-bottom: 1px dotted $snowpurple;
+				.wrap {
+					display: block;
+					padding: 0px 0px 0px 0.5em;
+					// SITE LOGO
+					.custom-logo-link {
+						float: left;
+						margin-top: 0.75em;
+						padding: 0.5em 0.5em 0px 0px;
+						width: 20%;
+						img {	
+							width: 60px;
+							height: auto;
+						} //img
+					} //.custom-logo-link
+					// SITE BRANDING TEXT
+					.site-branding-text {
+						width: 80%;
+						.site-title {
+							font-size: 18px;
+							font-size: 1.125rem;
+							font-weight: $normal;
+						} //.site-title
+						.site-description {
+							font-size: 15px;
+							font-size: 0.9375rem;		
+						} //.site-description
+					} //.site-branding-text
+				} //.wrap	
+			} //.site-branding
+			// LOGIN FORM
+			.login-form {
+				display: block;
+				width: 100%;
+				margin: 0.5em 0px;
+				ul {
+					padding: 0px 0px 0px 3px;
+					display: block;
+					margin: 0px 0px 0px auto;
+					width: 320px;
+					li {
+						display: inline-block;
+						text-align: right;
+						margin-right: 3px;
+						&:last-child {
+							margin-right: none;
+						}
+						input {
+							width: 100px;
+							padding: 3px 5px;
+							font-size: 13px;
+							font-size: 0.8125rem;
+							&[type="submit"] {
+								padding: 5px 0.5em;
+								text-align: center;
+								width: auto;
+							} //&[type="submit"]
+						} //input
+					} //li
+				} //ul
+			} //.login-form
+		} //.top-header-wrapper	
+	} //.site-header
+} //breakpoint($tablet)
+
 @include breakpoint($tablet) {
 	.site-header {
-		.site-branding {
-			padding: 3em 0;
-			.wrap {
-				.site-branding-text {
-					.site-title {
-						font-size: 36px;
-						font-size: 2.25rem;
-					} //.site-title
-					.site-description {
-						font-size: 18px;
-						font-size: 1.125rem;		
-					}
-				} //.site-branding-text
-			} //.wrap	
-		} //.site-branding
+		.top-header-wrapper {
+			// SITE BRANDING
+			.site-branding {
+				padding: 0px;
+				border-bottom: 1px dotted $snowpurple;
+				.wrap {
+					// SITE LOGO
+					.custom-logo-link {
+						padding-right: 1em;
+						float: left;
+						margin-top: 0.75em;
+						img {	
+							width: 70px;
+							height: auto;
+						} //img
+					} //.custom-logo-link
+					// SITE BRANDING TEXT
+					.site-branding-text {
+						.site-title {
+							font-size: 22px;
+							font-size: 1.375rem;
+						} //.site-title
+						.site-description {
+							font-size: 16px;
+							font-size: 1rem;		
+						} //.site-description
+					} //.site-branding-text
+				} //.wrap	
+			} //.site-branding
+			// LOGIN FORM
+			.login-form {
+				display: block;
+				width: 100%;
+				margin: 0.5em 0px;
+				ul {
+					padding: 0px;
+					display: block;
+					margin: 0px;
+					width: 410px;
+					text-align: right;
+					margin: 0px auto;
+					li {
+						display: inline-block;
+						text-align: right;
+						margin-right: 0.2em;
+						&:last-child {
+							margin-right: none;
+						}
+						input {
+							width: 150px;
+							padding: 0.2em 0.5em;
+							font-size: 14px;
+							font-size: 0.875rem;
+							&[type="submit"] {
+								padding: 0.4em 1em;
+								text-align: center;
+								width: auto;
+							} //&[type="submit"]
+						} //input
+					} //li
+				} //ul
+			} //.login-form
+		} //.top-header-wrapper
 	} //.site-header
 } //breakpoint($tablet)
 
 @include breakpoint($laptop) {
-	.site-branding {
-		margin-bottom: 0;
-	}
+	.site-header {
+		.top-header-wrapper {
+			height: auto;
+			padding: 0px;
+			position: relative;
+			// SITE BRANDING
+			.site-branding {
+				padding: 0px;
+				margin-bottom: 0px;
+				display: block;
+				width: 65%;
+				// BRANDING WRAP
+				.wrap {
+					padding: 0px 0px 0px 2em;
+					// SITE LOGO
+					.custom-logo-link {
+						padding-right: 1em;
+						float: left;
+						margin-top: 0.5em;
+						img {	
+							width: 90px;
+							height: auto;
+						} //img
+					} //.custom-logo-link
+					// SITE BRANDING TEXT
+					.site-branding-text {
+						.site-title {
+							font-size: 26px;
+							font-size: 1.625rem;
+						} //.site-title
+						.site-description {
+							font-size: 18px;
+							font-size: 1.125rem;		
+						} //.site-description
+					} //.site-branding-text
+				} //.wrap	
+			} //.site-branding
+			// LOGIN FORM
+			.login-form {
+				display: block;
+				width: auto;
+				margin: 0px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 0.5em;
+				ul {
+					padding: 0px;
+					display: block;
+					margin: 0px;
+					width: auto;
+					text-align: right;
+					li {
+						display: block;
+						margin-bottom: 0.2em;
+						width: 150px;
+						&:last-child {
+							margin-bottom: none;
+						}
+						input {
+							width: 150px;
+							padding: 0.2em 0.5em;
+							&[type="submit"] {
+								// padding: 0.4em 1em;
+								text-align: center;
+								width: 120px;
+							} //&[type="submit"]
+						} //input
+					} //li
+				} //ul
+			} //.login-form
+		} //.top-header-wrapper
+	} //.site-header
+
 	.has-header-image.pleiades17-front-page .site-branding,
 	.has-header-video.pleiades17-front-page .site-branding,
 	.has-header-image.home.blog .site-branding,
@@ -62,9 +252,6 @@
 		right: 0;
 		top: 0;
 	}
-	.custom-logo-link {
-		padding-right: 2em;
-	}
 	.custom-logo-link img,
 	body.home.title-tagline-hidden.has-header-image .custom-logo-link img,
 	body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
@@ -74,12 +261,31 @@
 	.title-tagline-hidden.home.has-header-video .custom-logo-link img {
 		max-height: 200px;
 	}
-	.site-title {
-		font-size: 36px;
-		font-size: 2.25rem;
-	}
-	.site-description {
-		font-size: 16px;
-		font-size: 1rem;
-	}
 } //breakpoint($laptop)
+
+@include breakpoint($desktop) {
+	.site-header {
+		.top-header-wrapper {
+			.site-branding {
+				.wrap {
+					// SITE LOGO
+					.custom-logo-link {
+						img {	
+						} //img
+					} //.custom-logo-link
+					// SITE BRANDING TEXT
+					.site-branding-text {
+						.site-title {
+							font-size: 30px;
+							font-size: 1.875rem;
+						} //.site-title
+						.site-description {
+							font-size: 20px;
+							font-size: 1.25rem;			
+						} //.site-description
+					} //.site-branding-text
+				} //.wrap	
+			} //.site-branding
+		} //.top-header-wrapper
+	} //.site-header
+} //breakpoint($desktop)
